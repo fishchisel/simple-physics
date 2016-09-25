@@ -4,10 +4,25 @@
 <head>
   <meta charset="UTF-8" />
   <title>Simple Physics</title>
+  <style>
+    #info {
+      position:fixed;
+      top:30px;
+      left: 30px;
+      z-index: 100;
+    }
+  </style>
 </head>
 
 <body>
-  <canvas id="canvas" style="width:100%; height: 100%;" />
+  <canvas id="canvas" style="width:100%; height: 100%;"></canvas>
+  <div id="info" >
+    Simple physics demo.
+    <br />Click and drag to create a particle
+    <br />Alt + click and drag to create a wall.
+    <br />Ctrl + click and drag to change gravity.
+    <br />Press the spacebar to toggle trails on/off.
+  </div>
 
   <script src="js/bundle.js"></script>
 </body>

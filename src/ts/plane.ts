@@ -1,9 +1,17 @@
-import { Plane as IPlane, Vector2d, Particle, Line } from './interfaces';
+import { Plane as IPlane, Vector2d, Particle, Wall } from './interfaces';
+
+function randomRgbString(letters='0123456789ABCDEF') {
+    let color = '#';
+    for (var i = 0; i < 6; i++ ) {
+        color += letters[Math.floor(Math.random() * letters.length)];
+    }
+    return color;
+}
 
 /* Provides a simple Plane implementation. */
 class Plane implements IPlane {
   particles: Particle[] = [];
-  lines: Line[] = [];
+  walls: Wall[] = [];
   gravity: Vector2d;
 
   constructor(gravity: Vector2d) {
@@ -11,10 +19,13 @@ class Plane implements IPlane {
   }
 
   addParticle(pos: Vector2d, vel: Vector2d) {
-    this.particles.push({pos: pos, vel: vel});
+    // random dark color
+    let col = randomRgbString('123456788');
+    this.particles.push({pos: pos, vel: vel, col: col});
+
   }
-  addLine(start: Vector2d, end: Vector2d) {
-    this.lines.push({start: start, end: end});
+  addWall(start: Vector2d, end: Vector2d) {
+    this.walls.push({start: start, end: end});
   }
 }
 

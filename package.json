@@ -25,6 +25,7 @@
     "gulp-typescript": "^3.0.0",
     "tsify": "^1.0.7",
     "typescript": "^2.0.3",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
   }
 }

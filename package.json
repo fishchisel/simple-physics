@@ -1,0 +1,30 @@
+{
+  "name": "simple-physics",
+  "version": "0.1.0",
+  "description": "a simple physics simulation in typescript",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fishchisel/simple-physics.git"
+  },
+  "author": "fishchisel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fishchisel/simple-physics/issues"
+  },
+  "homepage": "https://github.com/fishchisel/simple-physics#readme",
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "del": "^2.2.2",
+    "express": "^4.14.0",
+    "gulp": "^3.9.1",
+    "gulp-gh-pages": "^0.5.4",
+    "gulp-typescript": "^3.0.0",
+    "tsify": "^1.0.7",
+    "typescript": "^2.0.3",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
